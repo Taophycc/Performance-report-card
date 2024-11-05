@@ -1,0 +1,357 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'hanken grotesk';
+    font-size: 18px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    max-height: 900px;
+    width:50%;
+    margin: 70px auto;
+    border-radius: 30px;
+    background-color: white;
+    
+}
+
+.display-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    background: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    width: 50%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.circle {
+    border-radius: 50%;
+    
+    background: linear-gradient(hsla(256, 72%, 46%, 1),hsla(256, 72%, 46%, 1));
+    width: 11em;
+    height: 11em;
+    margin-top: 10px;
+    justify-content: center;
+   
+}
+
+.header {
+    font-size: 1.5rem;
+    opacity: 0.8;
+    color: white;
+    margin: 2em;
+}
+
+.circle p {
+    color: white;
+    text-align: center;
+    font-size: 4.8rem;
+    margin: 25px;
+    font-weight: bold;
+    opacity: 1;
+    
+}
+span {
+    display: block;
+    font-size: 1.2rem;
+    opacity: 0.3;
+    
+}
+.section h2 {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 1em;
+    font-weight: bold;
+}
+
+.section p {
+    color: white;
+    text-align: center;
+    margin-top: 1.25em;
+    margin-left: 2.9em;
+    width: 70%;
+    opacity: 0.8;
+}
+
+
+
+
+.content-container {
+    box-shadow: 10px 10px 10px aliceblue;
+    width: 50%;
+    border-radius: 30px 30px 30px 0px;
+    height: 100%;
+}
+
+.content {
+    width: 100%;
+    height: 90%;
+    padding: 45px;
+
+}
+ul {
+    gap: 10;
+}
+li:first-child {
+    background-color: rgb(255, 246, 246);
+    color: hsl(0, 100%, 67%);
+    border-radius: 10px;
+    padding: 0.5em;
+    margin:2em 0;
+
+}
+
+li:nth-child(2) {
+    background-color: rgb(255, 251, 243);
+    color: hsl(39, 100%, 56%);
+    margin:2em 0;
+    border-radius: 10px;
+    padding:0.5em
+    
+}
+li:nth-child(3) {
+    background-color: rgb(243, 251, 250);
+    color: hsl(166, 100%, 37%);
+    margin:2em 0;
+    border-radius: 10px;
+    padding:0.5em
+    
+}
+
+li:nth-child(4) {
+    background-color: rgb(243, 243, 253 );
+    color: hsl(234, 85%, 45%);
+    margin:2em 0;
+    margin-top: 2em;
+    border-radius: 10px;
+    padding:0.5em
+    
+}
+li {
+    list-style-type: none;
+    margin-bottom: 2em;
+    padding:0.5em
+    border-radius;
+}
+
+li > span {
+    display: inline;
+    margin-left: 5em;
+}
+
+li >img {
+    margin-right: 0.1em;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    background-color: hsl(224, 30%, 27%);
+    padding: 1em 5.5em;
+    border-radius: 40px;
+    margin: 2em 2em 2em 0.1em;
+
+}
+
+@media (min-width:375px) and (max-width:450px) {
+   body {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+   }
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width:100%;
+        margin-right: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        border-radius: 0 0 30px 0;
+    }
+    .display-container {
+        width: 100%;
+        height: 50%;
+        border-radius: 0 0 30px 30px;
+        padding: 30px;
+
+
+        
+    }
+    .circle {
+        width: 150px;
+        height: 150px;
+        margin-top: 0.2em;
+    }
+    .circle p {
+        font-size: 3rem;
+    }
+    span {
+        font-size: auto;
+    }
+    .header {
+        margin-top: 0.1em;
+        margin-bottom: 0.9em;
+        font-size: auto;
+    }
+    .section h2 {
+        margin-top: 0.2em;
+        font-size: 2em;
+    }
+    .section p {
+        margin: 0.1em 0 0 45px;
+    }
+
+    .content-container {
+        width: 100%;
+        border: 10px olid black;
+        height: auto;
+    }
+    .content {
+        width: 100%;
+        height: 50%;
+        padding-block: 20px;
+        padding-inline: 30px;
+    
+    }
+    li:first-child {
+        margin: 1em 0;
+    }
+    li:nth-child(2) {
+        margin: 1em 0;
+    }
+    li:nth-child(3) {
+        margin: 1em 0;
+    }
+    li:nth-child(4) {
+        margin-top: 1em;
+        margin-bottom: 2em;
+    }
+    a {
+        margin: 2em 0;
+        text-align: center;
+        padding-inline:9.5em ;
+        margin-left: 0em;
+        margin-top: 2em;
+        
+    }
+    li > span {
+        display: inline;
+        margin-left: 8em;
+    }
+}
+
+@media  (max-width:374px) {
+    body {
+     font-size: 14px;
+     margin: 0;
+     padding: 0;
+    }
+     .container {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         height: auto;
+         width:100%;
+         margin-right: 0;
+         margin-top: 0;
+         margin-bottom: 0;
+         border-radius: 0 0 30px 0;
+     }
+     .display-container {
+         width: 100%;
+         height: 50%;
+         border-radius: 0 0 30px 30px;
+         padding: 30px;
+ 
+ 
+         
+     }
+     .circle {
+         width: 150px;
+         height: 150px;
+         margin-top: 0.2em;
+     }
+     .circle p {
+         font-size: 3rem;
+     }
+     span {
+         font-size: auto;
+     }
+     .header {
+         margin-top: 0.1em;
+         margin-bottom: 0.9em;
+         font-size: auto;
+     }
+     .section h2 {
+         margin-top: 0.2em;
+         font-size: 2em;
+     }
+     .section p {
+         margin: 0.1em 0 0 45px;
+     }
+ 
+     .content-container {
+         width: 100%;
+         border: 10px olid black;
+         height: auto;
+     }
+     .content {
+         width: 100%;
+         height: 50%;
+         padding-block: 20px;
+         padding-inline: 30px;
+     
+     }
+     li:first-child {
+         margin: 1em 0;
+     }
+     li:nth-child(2) {
+         margin: 1em 0;
+     }
+     li:nth-child(3) {
+         margin: 1em 0;
+     }
+     li:nth-child(4) {
+         margin-top: 1em;
+         margin-bottom: 2em;
+     }
+     a {
+         margin: 2em 0;
+         text-align: center;
+         padding-inline:10em ;
+         margin-left: 0em;
+         margin-top: 2em;
+         align-self: center;
+     }
+     li > span {
+        display: inline;
+        margin-left: 8em;
+    }
+ }
+ @media (min-width:451px) and (max-width:601px) {
+    .container {
+        width: 100%;
+        margin-inline: 3em;
+    }
+    li > span {
+        display: inline;
+        margin-left: 3em;
+    }
+    a {
+        padding-inline: 3em;
+    }
+ }
