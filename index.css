@@ -355,3 +355,8 @@ a {
         padding-inline: 3em;
     }
  }
+@media (width:360px) {
+    a {
+        padding-inline:8.5em;
+    }
+}
